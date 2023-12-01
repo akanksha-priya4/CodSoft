@@ -10,6 +10,6 @@ Web Development Intern
 
 Level 1 Tasks:
 
-Task 1: Creating a responsive personal portfolio using  HTML,CSS,JS.
-Task 2: Creating a responsive landing page using HTML,CSS,JS.
+Task 1: Creating a responsive personal portfolio using  HTML,CSS,JS.<br>
+Task 2: Creating a responsive landing page using HTML,CSS,JS.<br>
 Task 3: Creating a calculator using HTML,CSS,JS.
