@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/4a9c189ed5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+    <!-------------------header/HOME------------------->
+    <header>
+        <div id="home" class="container">
+            <nav>
+                <div class="logo"><h1><span>A</span>YAYY</h1></div>
+                <ul class="nav-bar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="intro">
+                <h1>AKANKSHA<BR>PRIYA</h1>
+                <p>Web Developer || UI/UX Designer</p>
+                <a href="MyCV.PDF" download class="cv">Download CV</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-----------------------About---------------------->
+    <div id="about" class="about">
+        <h1>About Me</h1>
+        <div class="row">
+            <div class="img">
+                <img src="anime-me.jpg" alt="my-picture">
+            </div>
+            <div class="about-sec">
+                <p>I'm a versatile web developer and UI/UX designer passionate about creating user-centric digital experiences. With expertise in front-end and back-end technologies, my portfolio showcases a seamless blend of technical proficiency and design finesse. I thrive on transforming concepts into visually appealing, functional websites that resonate with users.</p>
+                <div class="tabs-all">
+                    <p class="tab active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div id="education" class="tab-content active-tab">
+                    <ul>
+                        <li><span>Dayananda Sagar Academy of Technology and Management<br></span>2021-Present</li>
+                        <li><span>Gyan Niketan Girls School<br></span>2012-2021</li>
+                        <li><span>D.A.V Public School<br></span>2008-2012</li>
+                    </ul>
+                </div>
+                <div id="skills" class="tab-content">
+                    <ul>
+                        <li><span>Front-End Development<br></span>HTML, CSS, JS</li>
+                        <li><span>Python<br></span>Intermediate</li>
+                        <li><span>Database Management<br></span>SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------Projects------------------------>
+    <div id="projects">
+        <div class="container">
+            <div class="title"><h1>PROJECTS</h1></div>
+                <div class="list">
+                    <div>
+                        <i class="fa-solid fa-wind"></i>
+                        <h2>Weather App</h2>
+                        <p>Welcome to the WeatherSci, your go-to weather companion. We deliver precision forecasts with a touch of simplicity. Stay ahead with real-time updates and personalized insights, ensuring you're ready for whatever the forecast holds.</p>
+                        <a href="https://github.com/akankshapriyaa/Weather.git"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Student Database Management System</h2>
+                        <p>
+                            Introducing our Student Database Management System – your academic hub for streamlined information. Efficiently organize student data, track progress, and simplify administrative tasks. Empowering educators and institutions with intuitive tools for better decision-making and student success. Elevate your educational management experience with ease and precision.</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Heaven'sup Cafe</h2>
+                        <p>Indulge your senses at our café through a virtual journey on our website. Explore our menu, discover cozy ambiance, and stay updated on events. Your gateway to a delightful coffee experience awaits – sip, savor, and connect with us online.</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!----------------------Contact------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact2">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> priyaakanksha393@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka</p>
+                    <div class="icons">
+                        <br>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact1">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 AYAYY 2023</p>
+        </div>
+    </div>
+</div>    
+    <script src="script.js"></script>
+</body>
+</html>

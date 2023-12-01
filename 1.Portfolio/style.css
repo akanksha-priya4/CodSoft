@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+/*---------header---------*/
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("Untitled design.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 10px 6%;
+}
+.logo span {
+  font-size: 40px;
+  color: rgb(182, 207, 209);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+ul {
+  list-style-type: none;
+}
+li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 19px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #161515;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/*------------Intro--------------*/
+
+.intro {
+  font-size: 30px;
+  top: 30%;
+  -ms-transform: translate(50%, 50%);
+  transform: translate(5%, 60%); /*margin: 14% 0px 0px 0px;*/
+}
+.intro p {
+  margin: 20px 0px 0px 0px;
+  font-size: 20px;
+}
+.cv {
+  display: inline-block;
+  background-color: #66c5c5;
+  color: rgb(48, 46, 46);
+  text-decoration: none;
+  margin-top: 4%;
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 50px;
+  border-style: solid;
+}
+.cv:hover {
+  color: #ffffff;
+  background: #1a6f6f;
+}
+
+/*-------------About---------------*/
+
+.about {
+  padding: 1% 10%;
+  font-size: 25px;
+}
+.about h1 {
+  text-align: center;
+}
+.row {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.img {
+  width: 100%;
+  flex-basis: 35%;
+}
+.about-sec {
+  align-items: justify;
+  padding: 3%;
+  font-size: 20px;
+  flex-basis: 50%;
+}
+.tabs-all {
+  display: flex;
+  margin: 0.6em 0 1em;
+}
+.tab {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #161515;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab.active-link::after {
+  width: 100%;
+}
+.tab-content {
+  font-size: 15px;
+  display: none;
+}
+.tab-content span {
+  color: rgb(6, 123, 136);
+  font-size: 20px;
+}
+.tab-content.active-tab {
+  display: block;
+}
+
+/*------------Projects-------------*/
+
+#projects {
+  padding: 30px 0;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 60px;
+  margin-top: 50px;
+}
+.list div {
+  background: rgb(216, 216, 216);
+  padding: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.list div i {
+  font-size: 40px;
+  color: rgb(34, 34, 34);
+  padding-top: 20px;
+}
+.list div h2 {
+  padding: 30px 0px 30px 0px;
+  font-size: 30px;
+}
+.list div:hover {
+  background: rgb(85, 193, 197);
+  transform: translateY(-10px);
+}
+/*-------------contact---------------*/
+#contact {
+  background: #f1efef;
+}
+.contact1 {
+  flex-basis: 60%;
+}
+.contact2 {
+  flex-basis: 35%;
+  font-size: 20px;
+}
+.contact2 p {
+  padding: 10px;
+  letter-spacing: 2px;
+}
+.contact2 h1 {
+  font-size: 30px;
+  padding-bottom: 10%;
+}
+.contact2 p i {
+  color: rgb(8, 130, 132);
+}
+.icons {
+  padding: 0px 15px;
+  font-size: 25px;
+}
+.icons a {
+  text-decoration: none;
+  color: rgb(55, 56, 56);
+  display: inline-block;
+  padding-right: 20px;
+  transition: transform 0.5s;
+}
+.icons a:hover {
+  color: rgb(6, 141, 144);
+  transform: translateY(-5px);
+}
+.btn {
+  font-size: 20px;
+  background: #c3c5c5;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: solid 1px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(136, 190, 190);
+}
+form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: solid 1px;
+  outline: none;
+  background: rgb(203, 205, 205);
+  padding: 15px 0px;
+  margin: 15px 0px;
+  color: #4f4e4e;
+  font-size: 18px;
+  border-radius: 6px;
+}
+input::placeholder,
+textarea::placeholder {
+  padding: 0px 10px;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #3a3939;
+  background: #afafaf;
+}
