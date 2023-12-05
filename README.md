@@ -1,6 +1,8 @@
 # CodSoft
 CODSOFT is a vibrant and diverse community that brings
-together individuals with similar objectives and ultimate goals.
+together individuals with similar objectives and ultimate goals.<br>
+
+This github repository is made to show my viewer the works/projects I have completed as an intern at CodSoft.
 
 Author: AKANKSHA PRIYA
 
